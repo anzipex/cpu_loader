@@ -8,8 +8,6 @@
 #ifndef CPULOADER_H
 #define CPULOADER_H
 
-#include <iostream>
-#include <thread>
 #include <valarray>
 
 /**
