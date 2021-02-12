@@ -5,11 +5,10 @@
  * @date July 26, 2017
  */
 
+#include "CpuLoader.h"
 #include <math.h>
-#include <iostream>
 #include <thread>
 #include <random>
-#include "CpuLoader.h"
 
 #define M_PI_180 M_PI / 180
 
