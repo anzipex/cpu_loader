@@ -5,8 +5,7 @@
  * @date July 26, 2017
  */
 
-#ifndef CPULOADER_H
-#define CPULOADER_H
+#pragma once
 
 #include <valarray>
 
@@ -23,7 +22,6 @@ public:
     void start();
 
 private:
-
     /**
      * @brief Perpetual cycle with calculations for CPU and coprocessor
      */
@@ -66,5 +64,3 @@ private:
     std::valarray<int> _arrayInt; //!< container for integer values
     std::valarray<double> _arrayDouble; //!< container for floating-point numbers
 };
-
-#endif /* CPULOADER_H */

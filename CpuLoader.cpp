@@ -5,14 +5,14 @@
  * @date July 26, 2017
  */
 
-#include <math.h>
-#include <iostream>
-#include <thread>
 #include "CpuLoader.h"
+#include <math.h>
+#include <thread>
+#include <random>
 
 #define M_PI_180 M_PI / 180
 
-CpuLoader::CpuLoader() :
+CpuLoader::CpuLoader():
 _size(1000),
 _arrayInt(_size),
 _arrayDouble(_size) {
@@ -21,7 +21,7 @@ _arrayDouble(_size) {
 void CpuLoader::start() {
     int numberOfThreads = 100;
     std::thread threads[numberOfThreads];
-    for (auto& thread : threads) {
+    for (auto &thread : threads) {
         thread = std::thread(&CpuLoader::calculate, this);
         thread.detach();
     }
