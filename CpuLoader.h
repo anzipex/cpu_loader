@@ -22,7 +22,6 @@ public:
     void start();
 
 private:
-
     /**
      * @brief Perpetual cycle with calculations for CPU and coprocessor
      */
