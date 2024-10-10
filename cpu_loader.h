@@ -1,10 +1,3 @@
-/** 
- * @file CpuLoader.h
- * @brief CpuLoader class reference
- * @author anzipex (anzipex@gmail.com)
- * @date July 26, 2017
- */
-
 #pragma once
 
 #include <valarray>
@@ -35,14 +28,14 @@ private:
     /**
      * @brief Calculations for the coprocessor
      */
-    void calculateFloat();
+    void calculateDouble();
 
     /**
      * @brief Counts the factorial
      * @param x, accepted value
      * @return calculate the factorial
      */
-    int calcualteFactorial(int x);
+    int calculateFactorial(int x);
 
     /**
      * @brief Counts random integers in the specified range
@@ -53,14 +46,14 @@ private:
     int randInt(int min, int max);
 
     /**
-     * @brief Counts random floating point numbers in the specified range
+     * @brief Counts random doubles in the specified range
      * @param min, from what value
      * @param max, until which value
      * @return Calculated result
      */
     double randDouble(double min, double max);
 
-    const int _size; //!< size for containers valarray
-    std::valarray<int> _arrayInt; //!< container for integer values
-    std::valarray<double> _arrayDouble; //!< container for floating-point numbers
+    const int size_; //!< size for containers val-array
+    std::valarray<int> arrayInt_; //!< container for integer values
+    std::valarray<double> arrayDouble_; //!< container for double values
 };
